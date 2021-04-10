@@ -63,21 +63,46 @@ It's recommended that you initialise a virtualised Windows 98SE and install it
 
 Once the VM is ready to go, drop in
 
-* The dummy file generated in step 1 *Notice*: Older FAT32 supports up to 4GB, but for some reason takes a REALLY long time to drop in big files (the lack of optimisation?)
+* The dummy file generated in step 1 
+	*Notice*: Older FAT32 supports up to 4GB, but for some reason takes a REALLY long time to drop in big files (the lack of optimisation?)
 
-* LordPE - for future dumping. *Notice*: You'll need to drop in the update files to use the latest version
+* LordPE - for future dumping. 
+	*Notice*: You'll need to drop in the update files to use the latest version
 
-* CC - The executable itself. Best to unpack first as it is packed with RAR5
+* CC - The executable itself. 
+	Best to unpack first as it is packed with RAR5
 
 ### Step 4 - Dump the unpacked binary
 
-perform, ```
-cc.com busy.bin
-
+perform, 
 ```
+cc.com busy.bin
+```
+
 and wait for some time to ensure that the software unpacked itself. 30 seconds should be more than enough.
 
 Then launch LordPE and select `cc.bin`. Right-click -> Dump full
 
 *Tip*: Pre-dumped copy available in [bin/dump9x.exe](bin/dump9x.exe)
+
+### Step 5 - Generate a listing
+
+**Warning**: Section is incomplete, further work needed
+
+It's been discovered that (apparently) all in-binary strings are encapsulated into 2 NULL-bytes of length 1 or more on both sides
+
+With this knowledge in mind, a simple getlist tool was created. Use,
+```
+python step5_getlist.py (target binary)
+```
+
+The current output listing is available as *dump9x.exe_list.txt*
+
+### Further steps?
+
+* Remove rubbish
+* Link the signatures with their descriptions (find patterns?)
+* Create an open source implementation of CC!
+--------------------------
+* *TAbdiukov*
 
