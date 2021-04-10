@@ -40,3 +40,44 @@ complains_n_suggestions direct to alephz@yahoo.com
 ```
 
 ## Discovered way to dump off CC database
+
+### Step 1 - generate "busy" file (dummy to keep the tool running)
+
+This is to later keep the CC tool running. The generated file is best to contain nulls (NULL-bytes), so CC doesn't detect. 
+
+It's set to genertate a 600 MB file which appears to work well. It makes the program last for about 5-10 minutes, and that's despite the claims of high optimisation of CC
+
+Use `step1_generate_busyfile.py` (The generated file itself is NOT included, as it is easy to regenerate it)
+
+* *Tip*: Best to generate on the modern host system to avoid old Python compat glitches, and then send over the file to whereever necessary
+
+### Step 2 - initialise a virtualised Windows instance
+
+Any pre-2010 Windows 32-bit should do fine. However, it's been discovered that on Windows NT onwards, the tol allocates too much memory for temporary use - which it doesn't appear to do on Windows 98SE.  
+
+Additionally, newer OSs utilise HyperThreading and multicore optimisations which appear to mess up the binary
+
+It's recommended that you initialise a virtualised Windows 98SE and install it
+
+### Step 3 - Drop in software
+
+Once the VM is ready to go, drop in
+
+* The dummy file generated in step 1 *Notice*: Older FAT32 supports up to 4GB, but for some reason takes a REALLY long time to drop in big files (the lack of optimisation?)
+
+* LordPE - for future dumping. *Notice*: You'll need to drop in the update files to use the latest version
+
+* CC - The executable itself. Best to unpack first as it is packed with RAR5
+
+### Step 4 - Dump the unpacked binary
+
+perform, ```
+cc.com busy.bin
+
+```
+and wait for some time to ensure that the software unpacked itself. 30 seconds should be more than enough.
+
+Then launch LordPE and select `cc.bin`. Right-click -> Dump full
+
+*Tip*: Pre-dumped copy available in [bin/dump9x.exe](bin/dump9x.exe)
+
