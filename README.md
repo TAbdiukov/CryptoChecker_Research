@@ -5,7 +5,7 @@ Attempt on reversing the database of CC by Aleph for both preservation and reuse
 
 CC aka CryptoChecker, produced by Aleph
 
-This is an amazing old tool to detecting (crypto) signatures in files. Unfortunately its database never became available for the public to reuse or port (to Linux). 
+This is an amazing old tool to detecting (crypto) signatures in files. Unfortunately, its database never became available for the public to reuse or port (to Linux). 
 
 The tool is last updated in 2016 and made with MZ-architecture in mind (.com file format, from MS-DOS/Win9x days), and it is unlikely that the tool is to work in the future systems (let alone on the systems outside the realm of M$)
 
@@ -45,23 +45,23 @@ complains_n_suggestions direct to alephz@yahoo.com
 
 This is to later keep the CC tool running. The generated file is best to contain nulls (NULL-bytes), so CC doesn't detect. 
 
-It's set to genertate a 600 MB file which appears to work well. It makes the program last for about 5-10 minutes, and that's despite the claims of high optimisation of CC
+It's set to generate a 600 MB file which appears to work well. It makes the program last for about 5-10 minutes, and that's despite the claims of high optimisation of CC
 
 Use `step1_generate_busyfile.py` (The generated file itself is NOT included, as it is easy to regenerate it)
 
-* *Tip*: Best to generate on the modern host system to avoid old Python compat glitches, and then send over the file to whereever necessary
+* *Tip*: Best to generate on the modern host system to avoid old Python compatibility issues, and then send over the file to wherever necessary
 
 ### Step 2 - initialise a virtualised Windows instance
 
-Any pre-2010 Windows 32-bit should do fine. However, it's been discovered that on Windows NT onwards, the tol allocates too much memory for temporary use - which it doesn't appear to do on Windows 98SE.  
+Any pre-2010 Windows 32-bit should do fine. However, it's been discovered that on Windows NT onwards, the tool allocates too much memory for temporary use - which it doesn't appear to do on Windows 98SE.  
 
-Additionally, newer OSs utilise HyperThreading and multicore optimisations which appear to mess up the binary
+Additionally, newer OSs utilise HyperThreading and multicore optimisations which appear to mess up the binary.
 
-It's recommended that you initialise a virtualised Windows 98SE and install it
+It's recommended that you initialise a virtualised Windows 98SE and install it.
 
 ### Step 3 - Drop in software
 
-Once the VM is ready to go, drop in
+Once the VM is ready to go, drop in,
 
 * The dummy file generated in step 1 
 	*Notice*: Older FAT32 supports up to 4GB, but for some reason takes a REALLY long time to drop in big files (the lack of optimisation?)
@@ -89,7 +89,7 @@ Then launch LordPE and select `cc.bin`. Right-click -> Dump full
 
 **Warning**: Section is incomplete, further work needed
 
-It's been discovered that (apparently) all in-binary strings are encapsulated into 2 NULL-bytes of length 1 or more on both sides
+It's been discovered that (apparently) all in-binary strings are encapsulated into 2 NULL-bytes of length 1 or more on both sides.
 
 With this knowledge in mind, a simple getlist tool was created. Use,
 ```
@@ -100,7 +100,7 @@ The current output listing is available as *dump9x.exe_list.txt*
 
 ### Further steps?
 
-* Remove rubbish
+* Remove rubbish.
 * Link the signatures with their descriptions (find patterns?)
 * Create an open source implementation of CC!
 --------------------------
