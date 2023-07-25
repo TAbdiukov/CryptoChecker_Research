@@ -1,5 +1,5 @@
 # Reverse_CryptoChecker
-Attempt on reversing the database of CC by Aleph for both preservation and reuse purposes on Linux
+Attempt on reversing the database of CC by Aleph for both preservation and reuse purposes on Linux.
 
 ## What is CC by Aleph ?
 
@@ -102,7 +102,7 @@ The current output listing is available as *dump9x.exe_list.txt*
 
 * Remove rubbish.
 * Link the signatures with their descriptions (find patterns?)
-* Create an open source implementation of CC!
+* Create an open-source implementation of CC!
 --------------------------
 * *TAbdiukov*
 
