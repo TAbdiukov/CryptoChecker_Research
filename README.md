@@ -1,6 +1,9 @@
 # Reverse_CryptoChecker
 Attempt on reversing the database of CC by Aleph for both preservation and reuse purposes on Linux.
 
+[![Download](https://img.shields.io/badge/download-success?style=for-the-badge&logo=windows95&logoColor=black)](http://gazlan.narod.ru/pe/cc/cc.rar)
+
+
 ## What is CC by Aleph ?
 
 CC aka CryptoChecker, produced by Aleph
