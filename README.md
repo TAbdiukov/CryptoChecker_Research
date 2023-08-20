@@ -103,8 +103,10 @@ The current output listing is available as *dump9x.exe_list.txt*
 
 ### Old versions
 
-* Crypto Checker (CC) 1.3 alpha 9 – [GitHub](https://github.com/nihilus/IDA-CC) / [old](./old/CC_1.3_alpha_9) / [IA](https://archive.org/details/CC1.3A9)  
-
+* CryptoChecker (CC) 1.1 (beta 8) and CryptoChecker (CC) 1.2 (alpha) – [old](./old/CC_1.1_(beta_8)_and_CC_1.2_(alpha)) / <ins>IA</ins>  
+* CryptoChecker (CC) 1.3 alpha – [old](./old/CC_1.3_alpha) / <ins>IA</ins>  
+* CryptoChecker (CC) 1.3 alpha 9 – [GitHub](https://github.com/nihilus/IDA-CC) / [old](./old/CC_1.3_alpha_9) / [IA](https://archive.org/details/CC1.3A9)  
+* CryptoChecker (CC) 1.3 alpha 11 – [old](./old/CC_1.3_alpha_11) / <ins>IA</ins>  
 
 ### Further steps?
 
