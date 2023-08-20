@@ -1,0 +1,59 @@
+
+
+-*-   CC  1.1 (beta 8)  *   Copyright (c) Aleph 2003   -*-
+
+Crypto Checker [ Incredible stupid & slow ! ]
+
+Usage: cc.com [switches] ExeFile [>LogFile]
+
+-i      - PE Info. For PE files only
+-d      - Dump Mode
+-x      - Dump with Extra Scan
+-#nnn   - Scan for sect. nnn (in Dec). For PE files only
+-o      - Scan Overlay (if any)
+-a      - Scan ALL parts
+-$name  - Check for specified algorithm name only
+
+   + ANTI-HACK (MeltIce Trick etc)
+   + ARCHIVER (some popular archivers)
+   + BLOWFISH (www.counterpane.com)
+   + BORLAND rand (www.borland.com)
+   + CAST-128, CAST-256
+   + CCITT CRC16 (Poly = 8005h)
+   + CCITT CRC32, ICRC32 (Poly = 0EDB88320h)
+   + CJ PRNG (by Bill Chambers / Bob Jenkins)
+   + EXCEPTION (Delphi: RaiseException)
+   + EXE (some EXE-stuff)
+   + HAVALx
+   + HEAVENTOOLS (www.heaventools.com)
+   + HKEYS (M$ Registry Keys)
+   + LOCKBOX (www.turbopower.com)
+   + MARS
+   + MD4, MD5 (www.rsa.com, RFC-1320, RFC-1321)
+   + MEMORY (Borland: TObject@System@Move)
+   + MOLEBOX (www.molebox.com)
+   + MSVC rand (www.microsoft.com)
+   + PIX (a few popular pix formates)
+   + PKZIP
+   + PRIME (3,000+ prime numbers)
+   + RC5, RC6 (www.rsa.com, RFC-2040)
+   + RIJNDAEL (AES)
+   + RIPEMD-128, RIPEMD-160
+   + RSDSOFT (www.rsdsoft.com)
+   + SHA-160, SHA-256
+   + SNEFRU 2.x
+   + STRING (Borland prefixed string)
+   + TIGER
+   + TIME (Time factor)
+   + TWOFISH
+   + WAKE
+   + WIDI (www.widisoft.com)
+   + XITECH (www.xitech-europe.co.uk)
+   + ZEXER (www.zexersoft.com)
+
+Try also
+
+   + RANDOM (or RND) for all known Pseudo-Random Number Generators (PRNG)
+
+complains_n_suggestions direct to alephz@hotpop.com
+

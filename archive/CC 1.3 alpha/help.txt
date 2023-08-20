@@ -1,0 +1,50 @@
+-*-   CC 1.3 alpha  *  Copyright (c)  Aleph 2000-2011   -*-
+
+Crypto Checker
+
+Usage: cc.com [switches] ExeFile [>LogFile]
+
+-i      - PE Info only. Don't perform any checks.
+-$name  - Check for specified algo group only.
+
+complains_n_suggestions direct to alephz@yahoo.com
+
+Available algo groups are:
+
+   AES               AES
+   ANTI_HACK         Anti-Hack
+   ARCHIVER          Archives
+   BLOWFISH          BLOWFISH
+   BORLAND           BORLAND
+   CAST              CAST
+   CRC               CRC
+   DITTO             DITTO
+   EXCEPTION         EXCEPTION
+   EXE               EXE
+   EXTRA             EXTRA
+   GFX               gfx
+   HAVAL             HAVAL
+   HKEYS             HKEYS
+   LOCKBOX           LOCKBOX
+   MAGIC             MAGIC
+   MARS              MARS
+   MASK              MASK
+   MD                MD
+   MEMORY            MEMORY
+   MICROSOFT         MICROSOFT
+   MSG               MSG
+   MSVC              MSVC
+   NUMS              NUMS
+   PRIMES            PRIMES
+   PRNG              PRNG
+   RC                RC
+   RIPEMD            RIPEMD
+   SHA               SHA
+   SNEFRU            SNEFRU
+   STRING            STRING
+   TIGER             TIGER
+   TIME              TIME
+   TWOFISH           TWOFISH
+   WAKE              WAKE
+   WIDI              WIDI
+   ZIP               ZIP

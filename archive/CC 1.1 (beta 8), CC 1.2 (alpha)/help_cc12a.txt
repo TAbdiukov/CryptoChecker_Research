@@ -1,0 +1,54 @@
+
+
+-*-   CC 1.2 (alpha)  *  Copyright (c) Aleph 2003, 2007   -*-
+
+Crypto Checker
+
+Usage: cc.com [switches] wildcards
+
+-i      - PE Info. For PE files only
+-d      - Dump Mode
+-x      - Dump with Extra Scan
+-a      - ALL methods
+-v      - Verbose
+-f      - Fuzzy
+-$name  - Check for specified algorithm name only
+
+   + ARC:              some popular archivers
+   + BLOWFISH          -> www.counterpane.com
+   + CAST:             CAST-128, CAST-256
+   + CJ PRNG:          by Bill Chambers / Bob Jenkins
+   + CRC:              CRC16 / CRC32
+   + EXCEPTION:        Delphi-> RaiseException
+   + EX:               Extra stuff
+   + EXE:              some EXE-stuff
+   + HAVALx:           
+   + HEAVENTOOLS:      -> www.heaventools.com
+   + HKEYS:            M$ Registry Keys
+   + LOCKBOX:          -> www.turbopower.com
+   + MARS:             
+   + RSA:              -> www.rsa.com; RFC-1320, RFC-1321, RFC-2040
+   + MEMORY:           -> Borland: TObject@System@Move
+   + MICROSOFT         -> www.microsoft.com
+   + MOLEBOX:          -> www.molebox.com
+   + NUM:              -> Frequently used numbers
+   + PIX:              a few popular pix formates
+   + PRIME:            3,000+ prime numbers
+   + RIJNDAEL / AES:   
+   + RIPEMD:           
+   + RND:              Pseudo-random number generators (PRNG)
+   + RSDSOFT:          -> www.rsdsoft.com
+   + SHA:              
+   + SNEFRU:           
+   + STR:              Delphi wide strings
+   + TIGER             
+   + TIME:             Time factor
+   + TWOFISH           
+   + WAKE              
+   + WIDI:             -> www.widisoft.com
+   + XITECH:           -> www.xitech-europe.co.uk
+   + ZEXER:            -> www.zexersoft.com
+   + ZIP:              
+
+complains_n_suggestions direct to alephz@yahoo.com
+
