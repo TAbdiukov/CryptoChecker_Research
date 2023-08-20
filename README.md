@@ -111,6 +111,7 @@ The current output listing is available as *dump9x.exe_list.txt*
 * Remove rubbish.
 * Link the signatures with their descriptions (find patterns?)
 * Create an open-source implementation of CC!
---------------------------
-* *TAbdiukov*
 
+---------------------------------
+
+***[Tim Abdiukov](https://github.com/TAbdiukov)***
