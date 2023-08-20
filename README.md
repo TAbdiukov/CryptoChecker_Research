@@ -101,6 +101,11 @@ python step5_getlist.py (target binary)
 
 The current output listing is available as *dump9x.exe_list.txt*
 
+### Old versions
+
+* Crypto Checker (CC) 1.3 alpha 9 – [GitHub](https://github.com/nihilus/IDA-CC) / [Archive](https://archive.org/details/CC1.3A9)  
+
+
 ### Further steps?
 
 * Remove rubbish.
