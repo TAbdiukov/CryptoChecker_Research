@@ -66,18 +66,18 @@ It's recommended that you initialise a virtualised Windows 98SE and install it.
 
 Once the VM is ready to go, drop in,
 
-* The dummy file generated in step 1 
+* The dummy file generated in step 1  
 	*Notice*: Older FAT32 supports up to 4GB, but for some reason takes a REALLY long time to drop in big files (the lack of optimisation?)
 
-* LordPE - for future dumping. 
+* LordPE - for future dumping.  
 	*Notice*: You'll need to drop in the update files to use the latest version
 
-* CC - The executable itself. 
+* CC - The executable itself.  
 	Best to unpack first as it is packed with RAR5
 
 ### Step 4 - Dump the unpacked binary
 
-perform, 
+perform,  
 ```
 cc.com busy.bin
 ```
