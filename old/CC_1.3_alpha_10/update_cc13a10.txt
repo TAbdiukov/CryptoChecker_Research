@@ -1,0 +1,36 @@
+CC update_cc13a10
+
+! BUG Fix! Entry: Compiler: Microsoft Visual C++ (RTL: __crtGetStringTypeA) misdetected
+! BUG Fix! Entry: Compiler: Microsoft Visual C++ (RTL: __crtLCMapStringA) misdetected
+* ZLib better detect
+* Borland Turbo C 1.0 better detect
+* MinGW32 better detect
+* PowerBasic CC 3.x better detect (EP)
+* CheckSum Adler32() better detect (RFC 1950)
+* Borland Delphi version better detect
+* Borland Delphi DCU Hdr magics
+* Borland C++ Builder better detect
+* Microsoft Visual C++ x64 better detect
+* NIST B571 better detect
+* LZX better detect
+* Tiny Primes array better detect
+* Hash padding array detection method changed
+* WinZip SFX better detect
++ GCC Algo group
++ MINGW Algo group
++ QT Algo group
++ ACSS Crypt
++ MinGW32 2.x..4.x DLL (EP)
++ MinGW64 2.x..4.x DLL (EP)
++ Qt strings detect (use QT Algo)
++ Aladdin HASP SRM
++ Rar 5.x Archive Signature
++ Confuser .NET Obfuscator (String)
++ LZXC2 Hdr marker
++ SnakeSoftware ExeBook
++ Photodex Installer
++ Map: Bits in byte count lookup table
++ Map: Power 2 table
++ eLicense initial detect
+
+alephz
