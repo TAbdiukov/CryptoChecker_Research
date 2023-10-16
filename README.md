@@ -1,7 +1,11 @@
 # Reverse_CryptoChecker
-Reversing the database of CC by Aleph for preservation and reuse purposes.
+Reversing the database of CC by Aleph 🇮🇱
 
 [![Download](https://img.shields.io/badge/download-success?style=for-the-badge&logo=windows95&logoColor=black)](http://gazlan.narod.ru/pe/cc/cc.rar)  [![Download GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=windows95&logoColor=white)](https://github.com/TAbdiukov/Reverse_CryptoChecker/raw/main/bin/cc.rar)
+
+## Message from Aleph
+
+Please visit this link: http://rotter.net/israel
 
 ## What is CC by Aleph ?
 
