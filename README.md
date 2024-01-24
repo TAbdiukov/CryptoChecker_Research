@@ -1,5 +1,5 @@
 # CryptoChecker_Research
-Researching the database of CC by Aleph.
+Researching CryptoChecker data by Aleph 🇮🇱.
 
 [![Download](https://img.shields.io/badge/download-success?style=for-the-badge&logo=windows95&logoColor=black)](http://gazlan.narod.ru/pe/cc/cc.rar)  [![Download GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=windows95&logoColor=white)](https://github.com/TAbdiukov/CryptoChecker_Research/raw/main/bin/cc.rar)
 
@@ -13,9 +13,9 @@ Researching the database of CC by Aleph.
 
 CC aka CryptoChecker by Aleph
 
-This is an amazing old tool to detecting (crypto) signatures in files. Unfortunately, its database never became available for the public to reuse or port (to Linux). 
+This is an amazing old tool to detecting (crypto) signatures in files. Unfortunately, no source code available.
 
-The tool is last updated in 2016 and made with MZ-architecture in mind (.com file format, from MS-DOS/Win9x days), and it is unlikely that the tool is to work in the future systems (let alone on the systems outside the realm of M$)
+The tool is last updated in 2016 and made with MZ-architecture in mind (.com file format, from MS-DOS/Win9x days), and given how capable the utility is, it would be great to be able to use this utility in the future.
 
 ```
 -*-   CC 1.3 alpha 12  *  Copyright (c)  Aleph 2000-2016   -*-
@@ -51,25 +51,21 @@ complains_n_suggestions direct to alephz@yahoo.com
 
 Please visit this link: http://rotter.net/israel
 
-## How to: extract CC strings
+## Guide: extract CC strings
 
 ### Step 1 - generate "busy" file (dummy to keep the tool running)
 
-This is to later keep the CC tool running. The generated file is best to contain nulls (NULL-bytes), so CC doesn't detect. 
+This is to later keep the CC tool running. The generated file is best to contain nulls (NULL-bytes), so CC minimally loads detection information. 
 
-It's set to generate a 600 MB file which appears to work well. It makes the program last for about 5-10 minutes, and that's despite the claims of high optimisation of CC
+It's set to generate a 600 MB file which seems to work well. It makes the program last for about 5-10 minutes, and that's despite the claims of high optimisation of CC
 
 Use `step1_generate_busyfile.py` (The generated file itself is NOT included, as it is easy to regenerate it)
 
-* *Tip*: Best to generate on the modern host system to avoid old Python compatibility issues, and then send over the file to wherever necessary
+* *Tip*: To avoid compatibility issues, it's best to generate "busy" file on the modern host system.
 
 ### Step 2 - initialise a virtualised Windows instance
 
-Any pre-2010 Windows 32-bit should do fine. However, it's been discovered that on Windows NT onwards, the tool allocates too much memory for temporary use - which it doesn't appear to do on Windows 98SE.  
-
-Additionally, newer OSs utilise HyperThreading and multicore optimisations which appear to mess up the binary.
-
-It's recommended that you initialise a virtualised Windows 98SE and install it.
+For some reason, `cc.com` operates most optimally in Win9x environment. There, the utility uses least RAM. Hence, Win9x environment is needed, ideally virtualized
 
 ### Step 3 - Drop in software
 
@@ -86,16 +82,16 @@ Once the VM is ready to go, drop in,
 
 ### Step 4 - Dump the unpacked binary
 
-perform,  
+execute,  
 ```
 cc.com busy.bin
 ```
 
-and wait for some time to ensure that the software unpacked itself. 30 seconds should be more than enough.
+and wait for some time to ensure that the software unpacks itself. 30 seconds should be more than enough.
 
 Then launch LordPE and select `cc.bin`. Right-click -> Dump full
 
-*Tip*: Pre-dumped copy available in [bin/dump9x.exe](bin/dump9x.exe)
+* Pre-dumped copy available in [rev/dump9x.exe](rev/dump9x.exe)
 
 ### Step 5 - Generate a listing
 
@@ -103,7 +99,7 @@ Use [strings2](https://github.com/glmcdona/strings2) or other tool to extract st
 
 Extracted strings are available in [./txt/](./txt)
 
-### Old versions
+### Binary
 
 * CryptoChecker (CC) 1.1 (beta 8) and CryptoChecker (CC) 1.2 (alpha) – [bin](./bin/CC_1.1_(beta_8)_and_CC_1.2_(alpha)) / [IA](https://archive.org/details/cc12a_and_cc11b8)  
 * CryptoChecker (CC) 1.3 alpha – [bin](./bin/CC_1.3_alpha) / [IA](https://archive.org/details/cc1.13a)  
