@@ -101,13 +101,13 @@ Extracted strings are available in [./txt/](./txt)
 
 ## Binary
 
-* CryptoChecker (CC) 1.1 (beta 8) and CryptoChecker (CC) 1.2 (alpha) – [bin](./bin/CC_1.1_(beta_8)_and_CC_1.2_(alpha)) / [IA](https://archive.org/details/cc12a_and_cc11b8)  
-* CryptoChecker (CC) 1.3 alpha – [bin](./bin/CC_1.3_alpha) / [IA](https://archive.org/details/cc1.13a)  
-* CryptoChecker (CC) 1.3 alpha 9 – [bin](./bin/CC_1.3_alpha_9) / [IA](https://archive.org/details/CC1.3A9) / [GitHub](https://github.com/nihilus/IDA-CC)  
-* CryptoChecker (CC) 1.3 alpha 10 – [bin](./bin/CC_1.3_alpha_10) / [IA](https://archive.org/details/cc13a10) / [52PoJie](https://www.52pojie.cn/thread-310517-1-1.html)  
-* CryptoChecker (CC) 1.3 alpha 11 (Mar 31, 2015) – [bin](./bin/CC_1.3_alpha_11_20150331) / [IA](https://archive.org/details/cryptochecker-1.3-alpha-11-mar-31-2015)  
-* CryptoChecker (CC) 1.3 alpha 11 (Oct 14, 2015) – [bin](./bin/CC_1.3_alpha_11_20151410) / [IA](https://archive.org/details/cc1.3a11)  
 * CryptoChecker (CC) 1.3 alpha 12 - [bin](./bin/CC_1.3_alpha_12)
+* CryptoChecker (CC) 1.3 alpha 11 (Oct 14, 2015) – [bin](./bin/CC_1.3_alpha_11_20151410) / [IA](https://archive.org/details/cc1.3a11)  
+* CryptoChecker (CC) 1.3 alpha 11 (Mar 31, 2015) – [bin](./bin/CC_1.3_alpha_11_20150331) / [IA](https://archive.org/details/cryptochecker-1.3-alpha-11-mar-31-2015)  
+* CryptoChecker (CC) 1.3 alpha 10 – [bin](./bin/CC_1.3_alpha_10) / [IA](https://archive.org/details/cc13a10) / [52PoJie](https://www.52pojie.cn/thread-310517-1-1.html)  
+* CryptoChecker (CC) 1.3 alpha 9 – [bin](./bin/CC_1.3_alpha_9) / [IA](https://archive.org/details/CC1.3A9) / [GitHub](https://github.com/nihilus/IDA-CC)  
+* CryptoChecker (CC) 1.3 alpha – [bin](./bin/CC_1.3_alpha) / [IA](https://archive.org/details/cc1.13a)  
+* CryptoChecker (CC) 1.1 (beta 8) and CryptoChecker (CC) 1.2 (alpha) – [bin](./bin/CC_1.1_(beta_8)_and_CC_1.2_(alpha)) / [IA](https://archive.org/details/cc12a_and_cc11b8)  
 
 ---------------------------------
 
