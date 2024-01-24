@@ -1,7 +1,13 @@
-# Reverse_CryptoChecker
-Reversing the database of CC by Aleph 🇮🇱
+# CryptoChecker_Research
+Researching the database of CC by Aleph.
 
-[![Download](https://img.shields.io/badge/download-success?style=for-the-badge&logo=windows95&logoColor=black)](http://gazlan.narod.ru/pe/cc/cc.rar)  [![Download GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=windows95&logoColor=white)](https://github.com/TAbdiukov/Reverse_CryptoChecker/raw/main/bin/cc.rar)
+[![Download](https://img.shields.io/badge/download-success?style=for-the-badge&logo=windows95&logoColor=black)](http://gazlan.narod.ru/pe/cc/cc.rar)  [![Download GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=windows95&logoColor=white)](https://github.com/TAbdiukov/CryptoChecker_Research/raw/main/bin/cc.rar)
+
+## Browse
+
+* [./bin (Binaries)](./bin)
+* [./rev (Reversing)](./rev)
+* [./txt (Strings)](./txt)
 
 ## What is CC by Aleph ?
 
@@ -45,7 +51,7 @@ complains_n_suggestions direct to alephz@yahoo.com
 
 Please visit this link: http://rotter.net/israel
 
-## Discovered way to dump off CC database
+## How to: extract CC strings
 
 ### Step 1 - generate "busy" file (dummy to keep the tool running)
 
@@ -93,31 +99,19 @@ Then launch LordPE and select `cc.bin`. Right-click -> Dump full
 
 ### Step 5 - Generate a listing
 
-**Warning**: Section is incomplete, further work needed
+Use [strings2](https://github.com/glmcdona/strings2) or other tool to extract strings.
 
-It's been discovered that (apparently) all in-binary strings are encapsulated into 2 NULL-bytes of length 1 or more on both sides.
-
-With this knowledge in mind, a simple getlist tool was created. Use,
-```
-python step5_getlist.py (target binary)
-```
-
-The current output listing is available as *dump9x.exe_list.txt*
+Extracted strings are available in [./txt/](./txt)
 
 ### Old versions
 
-* CryptoChecker (CC) 1.1 (beta 8) and CryptoChecker (CC) 1.2 (alpha) – [old](./old/CC_1.1_(beta_8)_and_CC_1.2_(alpha)) / [IA](https://archive.org/details/cc12a_and_cc11b8)  
-* CryptoChecker (CC) 1.3 alpha – [old](./old/CC_1.3_alpha) / [IA](https://archive.org/details/cc1.13a)  
-* CryptoChecker (CC) 1.3 alpha 9 – [old](./old/CC_1.3_alpha_9) / [IA](https://archive.org/details/CC1.3A9) / [GitHub](https://github.com/nihilus/IDA-CC)  
-* CryptoChecker (CC) 1.3 alpha 10 – [old](./old/CC_1.3_alpha_10) / [IA](https://archive.org/details/cc13a10) / [52PoJie](https://www.52pojie.cn/thread-310517-1-1.html)  
-* CryptoChecker (CC) 1.3 alpha 11 (Mar 31, 2015) – [old](./old/CC_1.3_alpha_11_20150331) / [IA](https://archive.org/details/cryptochecker-1.3-alpha-11-mar-31-2015)  
-* CryptoChecker (CC) 1.3 alpha 11 (Oct 14, 2015) – [old](./old/CC_1.3_alpha_11_20151410) / [IA](https://archive.org/details/cc1.3a11)  
-
-### Further steps?
-
-* Remove rubbish.
-* Link the signatures with their descriptions (find patterns?)
-* Create an open-source implementation of CC!
+* CryptoChecker (CC) 1.1 (beta 8) and CryptoChecker (CC) 1.2 (alpha) – [bin](./bin/CC_1.1_(beta_8)_and_CC_1.2_(alpha)) / [IA](https://archive.org/details/cc12a_and_cc11b8)  
+* CryptoChecker (CC) 1.3 alpha – [bin](./bin/CC_1.3_alpha) / [IA](https://archive.org/details/cc1.13a)  
+* CryptoChecker (CC) 1.3 alpha 9 – [bin](./bin/CC_1.3_alpha_9) / [IA](https://archive.org/details/CC1.3A9) / [GitHub](https://github.com/nihilus/IDA-CC)  
+* CryptoChecker (CC) 1.3 alpha 10 – [bin](./bin/CC_1.3_alpha_10) / [IA](https://archive.org/details/cc13a10) / [52PoJie](https://www.52pojie.cn/thread-310517-1-1.html)  
+* CryptoChecker (CC) 1.3 alpha 11 (Mar 31, 2015) – [bin](./bin/CC_1.3_alpha_11_20150331) / [IA](https://archive.org/details/cryptochecker-1.3-alpha-11-mar-31-2015)  
+* CryptoChecker (CC) 1.3 alpha 11 (Oct 14, 2015) – [bin](./bin/CC_1.3_alpha_11_20151410) / [IA](https://archive.org/details/cc1.3a11)  
+* CryptoChecker (CC) 1.3 alpha 12 - [bin](./bin/CC_1.3_alpha_12)
 
 ---------------------------------
 

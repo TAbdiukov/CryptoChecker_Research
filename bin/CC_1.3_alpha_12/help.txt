@@ -1,0 +1,87 @@
+-*-   CC 1.3 alpha 12  *  Copyright (c)  Aleph 2000-2016   -*-
+
+Crypto Checker
+
+Usage: cc.com [!command][{[+]/-}AlgoGroupName] ... [{[+]/-}AlgoGroupName] wildcards
+
+* NOTE: use optional [+/-]AlgoGroup for include/exclude AlgoGroup search
+	AlgoGroupName '*' or 'NULL' if used should be first in the method list
+
+Commands are:
+	noscript - suppress IDA IDC-script tags generation
+	quiet    - naked mode: no header, no footer... stuff only
+
+Examples:
+> cc filename.ext  // single file / QUICK mode - recomended
+> cc *.*           // some, but entire directory scan
+> cc *.DLL         // some, but for specified file type
+> cc !noscript filename.ext
+> cc * -TINY_PRIMES -SMALL_PRIMES -LOCKBOX filename.ext
+
+complains_n_suggestions direct to alephz@yahoo.com
+
+
+   DB Timestamp    :  Fri Nov 25 11:10:38 2016
+   DB Entries total:  4245
+
+ * Built to find everything
+
+Available AlgoGroup names are:
+
+   NULL              Start with empty DB, useful for plugins debug
+   *                 Search ALL - try as last resort
+   NEMO              Some unrecognized/strange signatures - just for your curiosity
+
+   AES               AES Block Cipher
+   ANTIHACK          A bit more anti-hack checks
+   ATL               ATL relative strings
+   BLACK             A few known blacklisted names
+   BORLAND           Some Borland common sigz
+   COM               COM-specific text strings
+   CRACK             Some words relative to crack
+   CRC               CRC16/32 Hash function
+   CRC16             CRC16 Poly
+   CRYPT32           Borland Crypt32 Default Keys
+   DES               DES Block Cipher
+   DITTO             Search for Ditto values
+   DOMENS            Domen names
+   EBOOK             e-books
+   ELDOS             EldoS controls
+   EXCEPTION         Exceptions
+   EXECryptor        EXECryptor
+   EXTRA             Extra search - Generate a Lot of Junk
+   FERMAT            A few Fermat's numbers
+   GFX               Common graphics formats
+   GCC               GNU C/C++ Compiler
+   HASH              Some Hash specific values
+   HAVAL             Haval Hash function
+   IMUL              Some strange IMUL immediate values
+   IRREDUCIBLE       Some Irreducible polynomials
+   LANGUAGE          Common language names
+   LOCKBOX           Some LockBox sigz
+   LZX               Some LZX archiver sigz
+   MAGIC             Some common Magic values
+   MARKER            Some common markers
+   MASK              Some common Mask values
+   MD                MD Family Hash functions
+   MINGW             MinGW strange tables
+   MIRACL            Some short MIRACL sigz
+   MSG               WinAPI Message reference
+   NUMS              A few common Numerical values
+   PRNG              A few common PRNG sigz
+   Q128              Q128 Block Cipher
+   QT                Qt compiler
+   RSA               RC5/6 Block Cipher etc.
+   SMALL_PRIMES      90,000+ small Prime numbers (> 65,521)
+   STL               STL relative strings
+   TBYTE             System@Pow10 TByte arrays
+   TIME              Date/Time calculation relative
+   TINY_PRIMES       6,000+ tiny Prime numbers (< 65,537)
+   VCL               VCL Import relative strings
+   WAKE              Wake Block Cipher
+   WORST             Top 500 worst passwords
+   WZTEXT            Borland Wide Zstrings dumper
+   ZIP               A few more (PK)Zip/ZLib sigz
+   ZDTEXT            Rough DOS Rus (CP866) text strings dumper (5..16384 chrs)
+   ZTEXT             Rough text Zstrings (ASCIIZ) dumper (5..16384 chrs)
+   Z4TEXT            Some as above, but DWORD alingned strings only
