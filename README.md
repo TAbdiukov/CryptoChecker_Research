@@ -99,7 +99,7 @@ Use [strings2](https://github.com/glmcdona/strings2) or other tool to extract st
 
 Extracted strings are available in [./txt/](./txt)
 
-### Binary
+## Binary
 
 * CryptoChecker (CC) 1.1 (beta 8) and CryptoChecker (CC) 1.2 (alpha) – [bin](./bin/CC_1.1_(beta_8)_and_CC_1.2_(alpha)) / [IA](https://archive.org/details/cc12a_and_cc11b8)  
 * CryptoChecker (CC) 1.3 alpha – [bin](./bin/CC_1.3_alpha) / [IA](https://archive.org/details/cc1.13a)  
