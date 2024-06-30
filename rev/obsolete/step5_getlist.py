@@ -18,9 +18,9 @@ def main(filename):
 	for m in re.finditer(pattern, new_raw):
 		buf = m.group(1).decode("ASCII")
 		fp2.write("* {0:08X}\t{1:d}\t{2:s}\n".format(m.start(), len(buf), buf))
-	
+
 	fp2.close()
-		
+
 	print("Completed")
 
 if __name__ == '__main__':
@@ -30,5 +30,4 @@ if __name__ == '__main__':
 	except:
 		print("Step 5 data retriever for Reverse CryptoChecker project")
 		print(sys.argv[0]+" (filename)")
-		
-	
+
