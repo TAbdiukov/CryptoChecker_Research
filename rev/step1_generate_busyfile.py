@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf8 -*-
 
 fp = open("busy.dat", 'wb+')
 page_len = 1024*1024*8 # 8 MB
