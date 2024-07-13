@@ -1,0 +1,7 @@
+how-to:
+
+1. step through packer code, skip some loops, until it starts resolving apis (alternatively set bp at getprocaddress to go there immediately)
+2. note where it is writing api addresses to: 401XXX
+3. after it's done with apis, step over ret -> you're at OEP
+4. launch scylla, enter OEP value, enter 401000 as IAT addr and 144 as size
+5. dump & fix
