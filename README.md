@@ -95,7 +95,7 @@ cc.com busy.bin
 
 and wait for some time to ensure that the software unpacks itself. 30 seconds should be more than enough.
 
-Then launch LordPE and select `cc.bin`. Right-click -> Dump full
+Then launch LordPE and select `cc.bin`. Right-click → Dump full
 
 * Pre-dumped copy available in [rev/dump9x.exe](rev/dump9x.exe)
 
