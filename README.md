@@ -19,11 +19,11 @@ Researching CryptoChecker data by Aleph 🇮🇱.
 * CryptoChecker (CC) 1.3 alpha – [bin](./bin/CC_1.3_alpha) / [IA](https://archive.org/details/cc1.13a)  
 * CryptoChecker (CC) 1.1 (beta 8) and CryptoChecker (CC) 1.2 (alpha) – [bin](./bin/CC_1.1_(beta_8)_and_CC_1.2_(alpha)) / [IA](https://archive.org/details/cc12a_and_cc11b8)
 
-## What is CC by Aleph ?
+## What is CC by Aleph?
 
 CC aka CryptoChecker by Aleph
 
-This is an amazing old tool to detecting (crypto) signatures in files. Unfortunately, no source code available.
+This is an amazing old tool for detecting (crypto) signatures in files. Unfortunately, no source code is available.
 
 The tool is last updated in 2016 and made with MZ-architecture in mind (.com file format, from MS-DOS/Win9x days), and given how capable the utility is, it would be great to be able to use this utility in the future.
 
@@ -57,35 +57,31 @@ complains_n_suggestions direct to alephz@yahoo.com
  * Built to find everything
 ```
 
-## Aleph's eXeTools signature
-
-Please visit this link: http://rotter.net/israel
-
 ## Guide: extract CC strings
 
-### Step 1 - generate "busy" file (dummy to keep the tool running)
+### Step 1 - Generate a "busy" file (dummy to keep the tool running)
 
 This is to later keep the CC tool running. The generated file is best to contain nulls (NULL-bytes), so CC minimally loads detection information. 
 
-It's set to generate a 600 MB file which seems to work well. It makes the program last for about 5-10 minutes, and that's despite the claims of high optimisation of CC
+A generated 600 MB file makes the program run for about 5-10 minutes.
 
 Use `step1_generate_busyfile.py` (The generated file itself is NOT included, as it is easy to regenerate it)
 
-* *Tip*: To avoid compatibility issues, it's best to generate "busy" file on the modern host system.
+* *Tip*: To keep it simple, it is best to generate a 'busy' file on the modern host system.
 
-### Step 2 - initialise a virtualised Windows instance
+### Step 2 - Create a virtualized Windows instance
 
-For some reason, `cc.com` operates most optimally in Win9x environment. There, the utility uses least RAM. Hence, Win9x environment is needed, ideally virtualized
+For some reason, `cc.com` operates most optimally in Win9x environment. There, the utility uses least RAM. Hence, a (virtualized) Win9x environment is needed.
 
-### Step 3 - Drop in software
+### Step 3 - Transfer files
 
-Once the VM is ready to go, drop in,
+Once the VM is ready to go, transfer,
 
 * The dummy file generated in step 1  
-	*Notice*: Older FAT32 supports up to 4GB, but for some reason takes a REALLY long time to drop in big files (the lack of optimisation?)
+	*Note*: Older FAT32 supports up to 4GB, but it takes a long time to transfer big files
 
 * LordPE - for future dumping.  
-	*Notice*: You'll need to drop in the update files to use the latest version
+	*Note*: The update files are also needed to use the latest version
 
 * CC - The executable itself.  
 	Best to unpack first as it is packed with RAR5
@@ -105,7 +101,7 @@ Then launch LordPE and select `cc.bin`. Right-click -> Dump full
 
 ### Step 5 - Generate a listing
 
-Use [strings2](https://github.com/glmcdona/strings2) or other tool to extract strings.
+Use [strings2](https://github.com/glmcdona/strings2) or other tools to extract strings.
 
 Extracted strings are available in [./txt/](./txt)
 
