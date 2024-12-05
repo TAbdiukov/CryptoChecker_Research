@@ -64,7 +64,7 @@ complains_n_suggestions direct to alephz@yahoo.com
 ### Extract CC strings
 *Explored prior to CryptoChecker (CC) 1.3 alpha 12 Unpacked 2024*
 
-### Step 1 - Generate a "busy" file (dummy to keep the tool running)
+#### Step 1 - Generate a "busy" file (dummy to keep the tool running)
 
 This is to later keep the CC tool running. The generated file is best to contain nulls (NULL-bytes), so CC minimally loads detection information. 
 
@@ -74,11 +74,11 @@ Use `step1_generate_busyfile.py` (The generated file itself is NOT included, as 
 
 * *Tip*: To keep it simple, it is best to generate a 'busy' file on the modern host system.
 
-### Step 2 - Create a virtualized Windows instance
+#### Step 2 - Create a virtualized Windows instance
 
 For some reason, `cc.com` operates most optimally in Win9x environment. There, the utility uses least RAM. Hence, a (virtualized) Win9x environment is needed.
 
-### Step 3 - Transfer files
+#### Step 3 - Transfer files
 
 Once the VM is ready to go, transfer,
 
@@ -91,7 +91,7 @@ Once the VM is ready to go, transfer,
 * CC - The executable itself.  
 	Best to unpack first as it is packed with RAR5
 
-### Step 4 - Dump the unpacked binary
+#### Step 4 - Dump the unpacked binary
 
 execute,  
 ```
@@ -104,7 +104,7 @@ Then launch LordPE and select `cc.bin`. Right-click → Dump full
 
 * Pre-dumped copy available in [rev/dump9x.exe](rev/dump9x.exe)
 
-### Step 5 - Generate a listing
+#### Step 5 - Generate a listing
 
 Use [strings2](https://github.com/glmcdona/strings2) or other tools to extract strings.
 
