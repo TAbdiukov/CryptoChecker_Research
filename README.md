@@ -8,10 +8,12 @@ Researching CryptoChecker data by Aleph 🇮🇱.
 * [./bin (Binaries)](./bin)
 * [./rev (Reversing)](./rev)
 * [./txt (Strings)](./txt)
+* [./unpacked (🆕 unpacked binaries)](./unpacked) – Kudos to [Hendi48](https://github.com/Hendi48)
 
 ## Binary
 
-* CryptoChecker (CC) 1.3 alpha 12 - [bin](./bin/CC_1.3_alpha_12)
+* CryptoChecker (CC) 1.3 alpha 12 - [bin](./bin/CC_1.3_alpha_12)  
+* CryptoChecker (CC) 1.3 alpha 12 Unpacked 2024 - [unpacked](./unpacked/Hendi48_CryptoChecker_1.3_alpha_12)  
 * CryptoChecker (CC) 1.3 alpha 11 (Oct 14, 2015) – [bin](./bin/CC_1.3_alpha_11_20151410) / [IA](https://archive.org/details/cc1.3a11)  
 * CryptoChecker (CC) 1.3 alpha 11 (Mar 31, 2015) – [bin](./bin/CC_1.3_alpha_11_20150331) / [IA](https://archive.org/details/cryptochecker-1.3-alpha-11-mar-31-2015)  
 * CryptoChecker (CC) 1.3 alpha 10 – [bin](./bin/CC_1.3_alpha_10) / [IA](https://archive.org/details/cc13a10) / [52PoJie](https://www.52pojie.cn/thread-310517-1-1.html)  
@@ -57,7 +59,10 @@ complains_n_suggestions direct to alephz@yahoo.com
  * Built to find everything
 ```
 
-## Guide: extract CC strings
+## Legacy section
+
+### Extract CC strings
+*Explored prior to CryptoChecker (CC) 1.3 alpha 12 Unpacked 2024*
 
 ### Step 1 - Generate a "busy" file (dummy to keep the tool running)
 
