@@ -12,7 +12,7 @@ Researching CryptoChecker data by Aleph 🇮🇱.
 
 ## Binary
 
-* CryptoChecker (CC) 1.3 alpha 12 - [bin](./bin/CC_1.3_alpha_12)  
+* CryptoChecker (CC) 1.3 alpha 12 - [bin](./bin/CC_1.3_alpha_12) / [IA](https://archive.org/details/CC_1.3_alpha_12)  
 * CryptoChecker (CC) 1.3 alpha 12 Unpacked 2024 - [unpacked](./unpacked/Hendi48_CryptoChecker_1.3_alpha_12)  
 * CryptoChecker (CC) 1.3 alpha 11 (Oct 14, 2015) – [bin](./bin/CC_1.3_alpha_11_20151410) / [IA](https://archive.org/details/cc1.3a11)  
 * CryptoChecker (CC) 1.3 alpha 11 (Mar 31, 2015) – [bin](./bin/CC_1.3_alpha_11_20150331) / [IA](https://archive.org/details/cryptochecker-1.3-alpha-11-mar-31-2015)  
